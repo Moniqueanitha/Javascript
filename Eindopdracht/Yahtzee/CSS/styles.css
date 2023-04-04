@@ -1,0 +1,62 @@
+.heading {
+  background-color: blueviolet;
+  color: #000000;
+  text-align: center;
+}
+
+
+.dice {
+  width: 120px;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.btn-hold {
+  display: block;
+  margin: auto;
+}
+
+.holdDice {
+  text-align: center;
+}
+
+.rollButtonStyle {
+text-align: right;
+}
+
+.nextTurnStyle {
+text-align: left;
+}
+
+.score {
+  text-align: center;
+}
+
+.newGame {
+text-align: center;
+}
+
+@keyframes rollDice {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotateX(180deg);
+  }
+  50% {
+    transform: rotate(270deg) rotateX(180deg);
+  }
+  75% {
+    transform: rotate(360deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotate(360deg) rotateX(180deg);
+  }
+}
+
+.dice.roll {
+    animation: rollDice 1s ease-in-out;
+}
+
+
